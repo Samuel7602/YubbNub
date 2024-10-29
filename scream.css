@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto {
+    margin-left: 20px;
+    font-size: 48px;
+}
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Ajusta según el tamaño que desees */
+    height: 100%;
+}
+.imagen img {
+    max-width: 100%;
+    max-height: 100%;
+}

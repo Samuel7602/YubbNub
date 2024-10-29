@@ -1,0 +1,24 @@
+body {
+    background-image: url(orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.box a {
+    text-decoration: none;
+    color: black; 
+    padding: 10px;
+  
+}
+
+.box a:hover {
+    background-color: orange;
+}
