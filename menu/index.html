@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YubNub</title>
+
+  <link rel="stylesheet" href="css/show-data.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="box">
+    <ul>
+      <li><a href="index.html" class="inicio" id="inicio">Inicio</a></li>
+      <li><a href="second-page.html" class="películas" id="peliculas">Películas</a></li>
+      <li><a href="third-page.html" class="series" id="series">Series</a></li>
+      <li><a href="fourth-page.html" class="ajustes" id="ajustes">Ajustes</a></li>
+    </ul>
+  </div>
+
+  <h1>Películas de terror más vistas</h1>
+
+  <div class="popular-container">
+
+    <div class="popular-content">
+      <div>
+        <img class="imagen" src="proyect-image/scream.jpg" alt="scream" id="scream">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/halloween.jpg" alt="halloween" id="halloween">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/exorcist.jpg" alt="exorcist" id="exorcist">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/jason.jpg" alt="jason" id="jason">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/nightmare.jpg" alt="nightmare" id="nightmare">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/terrifier.jpg" alt="terrifier" id="terrifier">
+      </div>
+
+    </div>
+  </div>
+
+  
+  <h2>Todas las películas y series</h2>
+
+  <main class="product-container">
+
+    <div class="product-1">
+      <div>
+        <img class="imagen" src="proyect-image/mandalorian.jpg" alt="mandalorian" id="mandalorian">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/boba-fett.jpg" alt="boba" id="boba">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/apes.png" alt="apes" id="apes">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/deadpool.jpg" alt="deadpool" id="deadpool">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/wild.webp" alt="wild" id="wild">
+      </div>
+      <div>
+        <img class="imagen" src="proyect-image/LOTR.jpg" alt="LOTR" id="LOTR">
+      </div>
+    </div>
+
+  </main>
+  
+  <div class="movie-form">
+    <form id="personal-data-form" action="../hola.html">
+      <h3>Buscador</h3>
+      
+      <input type="text" name="name" id="name" placeholder="Nombre">
+      <span id="form-name-invalid" style="visibility: hidden; color: red;">* campo requerido o nombre no válido</span>
+      
+      <input type="text" name="genre" id="genre" placeholder="Género">
+      <span id="form-genre-invalid" style="visibility: hidden; color: red;">* campo requerido o género no válido</span>
+  
+      <input type="text" name="date" id="date" placeholder="Fecha">
+      <span id="form-date-invalid" style="visibility: hidden; color: red;">* campo requerido o fecha no válida</span>
+  
+      <input type="text" name="image" id="image" placeholder="Imagen">
+      <span id="form-image-invalid" style="visibility: hidden; color: red;">* campo requerido o imagen no válida</span>
+  
+      <input type="submit" class="btn" value="Enviar">
+    </form>
+    
+  </div>
+
+ <section id="movies-section">
+    <h4>Películas que te gustaría ver</h4> 
+    <div id="movies-list">
+    </div>
+    <form action="#" id="movies-register">
+      <label for="movie-name">Nombre de la película</label>
+      <input type="text" name="movie-name" id="movie-name" placeholder="Introduce el nombre de la película" required>
+  
+      <label for="type">Tipo de película</label>
+      <input type="text" name="type" id="type" placeholder="Introduce el tipo de la película" required>
+  
+      <button type="submit">Añadir película</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/crud.js"></script>
+
+</body>
+
+</html>
+
+<!--
+//enlace de la pagina que he utilizado para inspirarme: https://dribbble.com/shots/22427925-Movie-Streaming-App?utm_source=Clipboard_Shot&utm_campaign=musicc3&utm_content=Movie%20Streaming%20App&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=musicc3&utm_content=Movie%20Streaming%20App&utm_medium=Social_Share
+-->

@@ -1,0 +1,415 @@
+body {
+  background-image: url(orange.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+img:hover {
+  border-color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-style: solid;
+
+
+}
+
+.imagen {
+  width: 200px;
+  height: 300px;
+  border-radius: 25px;
+  margin-right: 15px;
+
+}
+
+.box {
+  padding: 32px 0;
+  background-color: coral;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  color: chocolate;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.box.navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.box .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: aliceblue;
+}
+
+.back {
+  padding: 40px 0;
+}
+
+.box.navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: chocolate;
+  display: none;
+}
+
+.box a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+
+}
+
+
+.popular-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.product-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.popular-content div {
+  width: 35%;
+}
+
+.product-1 div {
+  width: 35%;
+}
+
+.popular-content div img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-1 div img {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --primary-color: rgb(255, 85, 0);
+  --primary-color-inverse: aliceblue;
+  --input-color: aliceblue;
+  --input-color-focus: lightyellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 142, 101);
+
+}
+
+input {
+  padding: 17px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid brown;
+  margin-bottom: 30px;
+  outline: none;
+  color: aliceblue;
+  font-size: 16px;
+  background-color: rgb(241, 162, 84);
+}
+
+form {
+  background-color: rgb(241, 162, 84);
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+  width: 380px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.btn {
+  background-color: brown;
+  border: 2px solid brown;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: brown;
+  border: 2px solid brown;
+}
+
+.movie-form {
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movies-section {
+  width: 26%;
+  max-width: 600px;  
+  margin: 0 auto;  
+  padding: 10px;    
+  border-radius: 100px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #header-menu-main-options {
+    margin: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #header-menu-main-options>li {
+    margin: auto 0;
+  }
+}
+
+input {
+  padding: 17px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid brown;
+  margin-bottom: 30px;
+  outline: none;
+  color: aliceblue;
+  font-size: 16px;
+
+}
+
+span{
+  color: brown;
+  visibility: hidden;
+}
+
+.movie-form {
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movies-section {
+  width: 26%;
+  max-width: 600px;  
+  margin: 0 auto;  
+  padding: 10px;    
+  border-radius: 100px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #header-menu-main-options {
+    display: none;
+  }
+
+  #header-hamburger {
+    display: none;
+  }
+
+  .menu,
+  .menu-showing {
+    width: auto;
+    margin: 0;
+    height: auto;
+
+    position: static;
+    visibility: visible;
+    display: inline-block;
+  }
+
+  .header-container>ul {
+    text-align: right;
+    display: inline-block;
+  }
+
+  .header-container>ul>li {
+    margin: 0 1em;
+    display: inline-block;
+  }
+}
+
+input {
+  padding: 17px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid brown;
+  margin-bottom: 30px;
+  outline: none;
+  color: aliceblue;
+  font-size: 16px;
+
+}
+.movie-form {
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movies-register {
+  width: 200%;
+  max-width: 303%;  
+  margin: 0 auto;  
+  padding: 35px;    
+  border-radius: 10px;
+  box-shadow:  0 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .popular-content div {
+    width: 25%;
+  }
+
+  .product-1 div {
+    width: 25%;
+  }
+
+}
+
+.movie-form {
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movies-section {
+  width: 100%;
+  max-width: 33%;  
+  margin: 0 auto;  
+  padding: 10px;    
+  border-radius: 100px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#movies-register {
+  width: 102%;
+  max-width: 303%;  
+  margin: 0 auto;  
+  padding: 35px;    
+  border-radius: 10px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .popular-content div {
+    width: 15%;
+  }
+
+  .product-1 div {
+    width: 15%;
+  }
+}
+
+
+.movie-form {
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#movies-section {
+  width: 38%;
+  max-width: 33%;  
+  margin: 0 auto;  
+  padding: 10px;    
+  border-radius: 100px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#movies-register {
+  width: 102%;
+  max-width: 303%;  
+  margin: 0 auto;  
+  padding: 35px;    
+  border-radius: 10px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

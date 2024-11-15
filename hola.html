@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/show-data.css">
+</head>
+
+<body>
+  <header class="header-container">
+    <div>
+      <i class="fa-solid fa-bicycle"></i><span id="header-title"> YubNub</span>
+    </div>
+
+    <ul id="header-menu-main-options">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="show-data.html">Show data</a></li>
+    </ul>
+
+    <ul id="header-menu" class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="show-data.html">Show data</a></li>
+      <li><a href="#">Mas películas</a></li>
+      <li><a href="#">Ajustes</a></li>
+      <li><a href="#">Opciones</a></li>
+    </ul>
+
+    <div id="header-hamburger" >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Película elegida</h1>
+  
+    <div class="data-container">
+      <p class="data-item"><strong>Name:</strong></p>
+      <p class="data-value" id="name"></p>
+      <p class="data-item"><strong>Genre:</strong></p>
+      <p class="data-value" id="genre"></p>
+      <p class="data-item"><strong>Date:</strong></p>
+      <p class="data-value" id="date"></p>
+      <p class="data-item"><strong>Image:</strong></p>
+      <p class="data-value" id="image"></p>
+    </div>
+  </div>
+
+  
+  <script src="js/show-data.js"></script>
+</body>
+
+</html>
